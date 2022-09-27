@@ -11,51 +11,41 @@
 <body>
     <div class="welcome">
         <header>
-            <h1> 🧚🏻‍♀️Welcome to 🌟Makeup Quiz🌟 Challenge🧚🏻‍♀️</h1>
+            <h1> Welcome to 🌟Makeup Quiz🌟 Challenge</h1>
 
             <p> Try to answer the following Makeup-ralated question with in the time limit.</p>
             <p> Keep in mind that wrong answer will penalize your score and time by </p>
-          </header>  
-        
-          <button class="buttom" id ="btn0">start</button>
-        
+
+          </header> 
+          <button id="start" class="hidden">start</button>
         <div class="container">
-            <div class ="quiz-box" data-state="hidden"> 
-                <section id="quiz1">
-                    <div class = "quiz-header">
+
+        <div class="quiz-box">
+            <div id="quiz">
+                <h1>🌟Makeup Quiz App🌟</h1>
+                <div class="quiz-header">
                     <p id="progress">Question x of y</p>
-                    <p id="timer">90</p>
-                    </div>
-                    <h2 id="Question1">Question 1: What the first product useing in makeup?</h1>
-                        <div id="answerA"> Lotion </div>
-                        <div id="answerB"> Makeup Primer</div>
-                        <div id="answerC"> Sun Protection </div>
-                        <div id="answerD"> Foundation </div>
-                <div class="button">
-                    <button class="buttom" id="btn1">
-                        A. <span id="choice0"> </span>
-                    </button>
-                    <button class="buttom" id="btn2">
-                        B. <span id="choice0"> </span>
-                    </button>
-                    <button class="buttom" id="btn3">
-                        C. <span id="choice0"> </span>
-                    </button>
-                    <button class="buttom" id="btn4">
-                        D. <span id="choice0"> </span>
-                    </button>
+                    <p id="count-down"></p>
+                </div>
+                <p id="question"></p>
+
+                <div class="buttons">
+                    <button class="btn" id="btn0">A. <span id="choice0"></span></button>
+                    <button class="btn" id="btn1">B. <span id="choice1"></span></button>
+                    <button class="btn" id="btn2">C. <span id="choice2"></span></button>
+                    <button class="btn" id="btn3">D. <span id="choice3"></span></button>
                 </div>
 
                 <hr>
-            
-                </section>
+                <footer>
+                    <p>made by wenli</p>
+
+                </footer>
             </div>
         </div>
- 
-<script>
+    </div>
 
-</script>
-
-   
+    <script src="Javacscript.js"></script>
 </body>
+
 </html>
